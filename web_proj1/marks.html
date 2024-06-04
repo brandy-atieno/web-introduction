@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="css\style.css">
+</head>
+<body>
+    <h1> Enter Marks For Each Subject <h1>
+<form>
+        <h2>Math</h2>
+        <label for="Mark"> Mark:</label>
+        <input type="number" id="maths" name="maths">
+
+        <h2>English</h2>
+        <label for="Mark"> Mark:</label>
+        <input type="number" id="english" name="english">
+
+        <h2>Kiswahili</h2>
+        <label for="Mark"> Mark:</label>
+        <input type="number" id="kiswahili" name="kiswahili">
+</form> 
+<button onclick="calculate()">Calculate Total</button>
+
+        <h2>Total Marks</h2>
+        <div class="result" id="result">0</div>
+
+<script>
+    //Get Marks
+    function calculate() {
+        var maths = parseInt(document.getElementById('maths').value);
+        var english = parseInt(document.getElementById('english').value);
+        var kiswahili = parseInt(document.getElementById('kiswahili').value);
+    
+        var total = maths + english + kiswahili;
+       
+       
+    //Display Total
+        document.getElementById('result').textContent = total;
+    }
+</script>
+</body>
+</html>
