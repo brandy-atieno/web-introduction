@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Report Card</title>
+<link rel="stylesheet" href="css\f1_style.css">
+<script src="js\f1.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h2>Student Report Card</h2>
+  <form id="reportCardForm">
+    <label for="name"> Student Name</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="regNumber">Registration Number</label>
+    <input type="text" id="regNumber" name="regNumber" required>
+
+    <label for="class">Class</label>
+    <input type="text" id="class" name="class" required>
+
+    <label for="school">School</label>
+    <input type="text" id="school" name="school" required>
+
+    <label for="maths">Maths Marks</label>
+    <input type="number" id="maths" name="maths" min="0" max="100">
+
+    <label for="science">Science Marks</label>
+    <input type="number" id="science" name="science" min="0" max="100">
+
+    <label for="english">English Marks</label>
+    <input type="number" id="english" name="english" min="0" max="100">
+
+    <label for="hist">History Marks</label>
+    <input type="number" id="hist" name="hist" min="0" max="100">
+
+    <label for="physical">Physical Education Marks</label>
+    <input type="number" id="physical" name="physical" min="0" max="100">
+
+    <button type="button" onclick="calculateReportCard()">Calculate Report Card</button>
+  </form>
+
+  <div id="output"></div>
+</div>
+
+
+
+</body>
+</html>
